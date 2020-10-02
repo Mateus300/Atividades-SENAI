@@ -1,1 +1,1 @@
-# Todas as Atividades do SENAI
+# Atividade 7 erros
