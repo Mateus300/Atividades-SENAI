@@ -1,0 +1,32 @@
+@charset  "UTF-8" ;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;      /* CSS RESET */
+    list-style: none;
+    vertical-align:baseline;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    border-radius: 10px;
+    border: solid 5px blue;
+    border-color: red;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 85%;
+}
+
+table{
+}
