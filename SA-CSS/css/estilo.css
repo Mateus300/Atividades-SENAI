@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: red;
+}
+
+h1{
+    background-color: white;
+    text-align: center;
+    font-size: 90px;
+}
+
+h2{
+    text-align: center;
+}
+
+#subtitulo{
+    text-align: center;
+    font-size: 50px;
+}
+
+table{
+    background-color: white;
+    width: 100%;
+}
+
+td.tabela{
+    font-size: x-large;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.missao{
+    color: white;
+}
+
+h3{
+    color: white;
+}
