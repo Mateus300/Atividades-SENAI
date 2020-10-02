@@ -1,0 +1,12 @@
+h1{
+    font-family: cursive, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+    /*lcomentario*/
+}
+h2{
+    text-align: center;
+    color: red;
+}
