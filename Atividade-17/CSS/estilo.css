@@ -1,0 +1,73 @@
+@charset  "UTF-8" ;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+body {
+background-color: cornflowerblue;
+}
+
+div{
+    border: 1px solid black;
+}
+
+#geral {
+    width: 960px;
+    background-color: rgb(5, 5, 5);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#topo {
+    width: 900px;
+    height: 240px;
+    background-color: cadetblue;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+#menu {
+    width: 900px;
+    height: 60px;
+    margin: 10px 30px;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+#lateral {
+    width: 200px;
+    height: 700px;
+    float: left;
+    background-color: darkgreen;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+} 
+
+#conteudo {
+    width: 670px;
+    height: 700px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    background-color: darkred;
+    margin-bottom: 10px;
+}
+
+#rodape {
+    width: 900px;
+    height: 50px;
+    background-color: deepskyblue;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    clear: both; /* limpa o left e o ritgh - para que a lateral e o conteúdo fiquem um ao lado do outro dentro do geral*/
+    border-radius: 10px;
+}

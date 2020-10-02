@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;      /* CSS RESET */
+    list-style: none;
+    vertical-align:baseline;
+}
+
+body {
+    background-color: #336677;
+    /* background-image: url("img/html-basico-v.2.jpg");
+    background-repeat: repeat;
+    background-position: right top;
+    background-size: 400px 200px; */
+}
+
+div {
+    border: 1px solid #000;
+
+    /* border-top:1px; */
+    /* border-bottom:1px; */
+    /* border-left:1px; */
+    /* border-right:1px; */
+    /* border-width:1px; */
+    /* border-style:solid; */
+    /* border-color:#000;  */
+}
+
+#geral {
+    width: 960px;
+    /* height: 800px;  /* Comentar essa linha para ficar automática */
+    background-color: rgba(120, 210, 189, 0.6);
+    margin: 0 auto ;
+    margin-top: 10px;    
+    /* margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin: 10px 100px 100px 150px; */
+
+    /* uma borda arredondada */
+    border-radius: 10px; /* chrome */
+    -moz-border-radius: 10px; /* firefox */
+    -webkit-border-radius: 10px; /* IE */
+
+    /* Uma sombra na borda */
+    box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7); 
+    -moz-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);  /* isso seria um normalize? */
+    -webkit-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+}
+
+#topo {
+    width:900px;
+    height:240px;
+    margin-left:30px;
+    margin-top:10px;
+    background-color:rgba(145, 220, 230, 0.6);
+    /* background-image:url("imagens/arch.jpg"); */
+    /* background-repeat:no-repeat;  /* no-repeat / repeat-x / repeat-y */
+    /* background-position:center; /* left top center bottom right */
+    /* background-size:900px 240px; */
+  
+    border-radius:10px; /* chrome */
+    -moz-border-radius:10px; /* firefox */
+    -webkit-border-radius:10px; /* IE */
+  
+    box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+    -moz-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+  }
+
+#menu {
+    width: 900px;
+    height: 60px;
+    background-color: rgba(145, 189, 234, 0.6);
+    margin-left: 30px;
+    margin-top: 10px;
+
+    border-radius:10px; /* chrome */
+    -moz-border-radius:10px; /* firefox */
+    -webkit-border-radius:10px; /* IE */
+
+    box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+    -moz-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+}
+
+/* Início do menu css horizontal */
+
+/* Fim do menu css horizontal */
+
+#lateral {
+    float: left;  /* importante para criar uma coluna lateral */
+    width: 200px;
+    height: 700px;
+    background-color: rgba(123, 200, 240, 0.6);
+    margin-left: 30px;
+    margin-top: 10px;
+    
+    border-radius:10px; /* chrome */
+    -moz-border-radius:10px; /* firefox */
+    -webkit-border-radius:10px; /* IE */
+
+    box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+    -moz-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 3px 4px 6px rgba(20, 20, 20, 0.7);    
+}
+
+/* Início do menu lateral CSS */
+
+/* Fim do menu lateral CSS */
+
+#conteudo {
+    float:right;  /* importante para criar uma coluna lateral */
+    width: 670px;
+    height: 700px;
+    background-color: rgba(98, 145, 240, 0.8);
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-radius:10px; /* chrome */
+    -moz-border-radius:10px; /* firefox */
+    -webkit-border-radius:10px; /* IE */
+
+    box-shadow: 5px 6px 8px rgba(20, 20, 20, 0.7);
+    -moz-box-shadow: 5px 6px 8px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 5px 6px 8px rgba(20, 20, 20, 0.7);
+}
+
+
+
+#rodape {
+    width: 900px;
+    height: 50px;
+    background-color: rgba(99, 251, 200, 0.7);
+    margin-left: 30px;
+    clear: both; /* limpa o left e o ritgh - para que a lateral e o conteúdo fiquem um ao lado do outro dentro do geral*/
+    margin-bottom: 10px;
+
+    border-radius:10px; /* chrome */
+    -moz-border-radius:10px; /* firefox */
+    -webkit-border-radius:10px; /* IE */
+
+    box-shadow: 5px 6px 8px rgba(20, 20, 20, 0.7);
+    -moz-box-shadow: 5px 6px 8px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 5px 6px 8px rgba(20, 20, 20, 0.7);
+}
