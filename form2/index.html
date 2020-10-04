@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+
+    <style>
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table cellpadding="5">
+            <tr bgcolor="orange">
+                <td colspan="2">SISTEMA DE GESTÃO ACADÊMICA</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</th>
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="login">Login</label>
+                </th>
+
+                <td>
+                    <input type="text" id="login" name="login" size="15" maxlength="15"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="senha">Senha</label>
+                </th>
+
+                <td>
+                    <input type="password" id="senha" name="senha" size="15" maxlength="15">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="status">Status</label>
+                </th>
+
+                <td>
+                    <select name="status" id="status">
+                        <option value="" selected="selected">-- Selecione --</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="viuvo">Viúvo</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="tipo">Tipo</label>
+                </th>
+
+                <td>
+                    <input type="radio" id="tipo" name="tipo" value="tecnico"/>
+                    <label for="tipo">Técnico</label>
+
+                    <input type="radio" id="tipo" name="tipo" value="professor"/>
+                    <label for="tipo">Professor</label>
+
+                    <input type="radio" id="tipo" name="tipo" value="aluno">
+                    <label for="tipo">Aluno</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="data">Data Criação</label>
+                </th>
+
+                <td>
+                    <input type="date" id="data" name="data"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="perfil">Perfil</label>
+                </th>
+
+                <td>
+                    <input type="radio" id="perfil" name="perfil" value="convidado"/>
+                    <label for="perfil">Convidado</label>
+
+                    <input type="radio" id="perfil" name="perfil" value="administrador">
+                    <label for="perfil">Administrador</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="observações">Observações</label>
+                </th>
+
+                <td>
+                    <textarea name="observações" id="observações" cols="30" rows="5" style="overflow-y: scroll;"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">
+                    <label for="modulos">Módulos</label>
+                </th>
+
+                <td>
+                    <input type="checkbox" id="compras" name="compras" value="compras"/>
+                    <label for="compras">Compras</label>
+
+                    <input type="checkbox" id="biblioteca" name="biblioteca" value="biblioteca"/>
+                    <label for="biblioteca">Biblioteca</label>
+                    
+                    <input type="checkbox" id="academico" name="academico" value="academico"/>
+                    <label for="academico">Acadêmico</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" id="documentação" name="documentação" value="documentação"/>
+                    <label for="documentação">Documentação</label>
+
+                    <input type="checkbox" id="recursosHumanos" name="recursosHumanos" value="recursosHumanos"/>
+                    <label for="recursosHumanos">Recursos Humanos</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <input type="submit" id="enviar" name="enviar" value="Cadastrar">
+
+                    <input type="reset" id="excluir" name="excluir" value="Excluir">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

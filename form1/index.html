@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+
+    <h1>Deixe um comentário</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="nome">Nome:<br></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" id="nome" name="nome" size="60" maxlength="30"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">E-mail:</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="email" id="email" name="email" size="60" maxlength="30"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="website">Website:</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="url" id="website" name="website" size="60" maxlength="50">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="coment">Comentário:</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <textarea cols="62" rows="10" id="coment" name="coment" style="overflow-y: scroll;"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><b>Observação: Seu comentário será publicado após passar pelo moderador.</b></p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2" style="text-align: left;">
+                    <input type="submit" id="enviar" name="enviar" value="Enviar Comentário">
+                </th> 
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
