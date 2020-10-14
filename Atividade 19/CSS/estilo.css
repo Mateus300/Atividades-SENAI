@@ -86,13 +86,21 @@ table#filme{
 }
 
 .cadastro{
-    width: 100%;
+    width: 75%;
     height: 100%;
     margin-left: 25%;
 }
 
 .cadastro2{
-    width: 100%;
+    width: 60%;
     height: 100%;
     margin-left: 40%;
+}
+
+.rodape{
+    width: 100%;
+    height: 100%;
+    margin: 5px 0px 10px 0px;
+    text-align: justify;
+    border: 1px black solid;
 }
