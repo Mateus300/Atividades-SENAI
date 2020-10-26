@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header, div, body, nav {
+    display: block;
+}
+
+header.imagem {
+    background-image: url("../imagem/fundo.jpg");
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.imagem div,topo {
+    display: flex;
+}
+
+.topo {
+    max-width: 100%;
+}
+
+.opacidade {
+    position: absolute;
+    background: rgba(202, 162, 110, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.logo {
+    background-image: url("../imagem/logo-2.JPG");
+    width: 200px;
+    height: 100px;
+    position: relative;
+    bottom: 0px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    padding: 18px 25px;
+    position: relative;
+    z-index: 2;
+    background-color: #f5a30d;
+    font-size: 20px;
+    text-align: right;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+nav.menu li {
+    display: inline-block;
+    font-weight: lighter;
+    padding: 0px 25px;
+} 
+
+header.imagem h2, h3 {
+    position: relative;
+    padding-top: 70px;
+    margin-bottom: 25px;
+    z-index: 2;
+    width: 100%;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color: #faa403;
+}
+
+header.imagem p {
+    position: relative;
+    color: white;
+    padding: 10px 50px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+p {
+    display: block;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 100%;
+}
+
+section.lema {
+    padding: 50px 0;
+    background-color: #faa403;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+.carrossel {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+}
+
+.produtos {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.wall, .aba {
+    display: none;
+    width: 80%;
+    height: 100%;
+}
+
+.wall:target, .aba:target{
+    display: block;
+}
+
+section.missao {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+}
+
+.icone-m {
+    float: left;
+    width: 33.3%;
+}
+
+.caixa {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.rodape {
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    background-color: black;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#caixa {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+#cadastro {
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+#franquea {
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+table#cad {
+    background-color: #faa403;
+    border-radius: 20px;
+}
+
+label, legend, input {
+    font-size: 20px;
+    color: rgb(58, 35, 0);
+}
+
+fieldset {
+    border: none;
+}
