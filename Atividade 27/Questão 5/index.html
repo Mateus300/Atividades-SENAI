@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05 - Uma lista de compras aonde vai adicionando itens</title>
+    <link rel="icon" href="../img/javascript.png">
+</head>
+<body>
+    <p>
+        <input type="text" name="compras" id="lista">
+        <button id="add">Adicionar</button>
+    </p>
+
+    <script>
+        var clique = document.querySelector('#add')
+
+        clique.addEventListener('click', listaCompras)
+
+        var oput = document.querySelector('#lista')
+
+        oput.addEventListener('click', foco)
+
+        function foco( event ) {
+            oput.value = ''
+        }
+
+        function listaCompras( event ) {
+            const compra = document.querySelector('#lista')
+
+            const addLista = document.createElement('p')
+            addLista.innerHTML = compra.value
+            document.body.appendChild(addLista)
+        }
+    </script>
+</body>
+</html>

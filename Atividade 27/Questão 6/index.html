@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06 - Lista com pop up</title>
+    <link rel="icon" href="../img/javascript.png">
+</head>
+<body>
+    <p>
+        <input type="text" name="tecnologia" id="lista">
+        <button id="add">Adicionar</button>
+    </p>
+
+    <script>
+        var clique = document.querySelector('#add')
+
+        clique.addEventListener('click', listaTec)
+
+        var oput = document.querySelector('#lista')
+
+        oput.addEventListener('click', foco)
+
+        function foco( event ) {
+            oput.value = ''
+        }
+
+        function listaTec( event ) {
+            let tecnologia = document.querySelector('#lista')
+
+            let addLista = document.createElement('p')
+            addLista.innerHTML = tecnologia.value
+            document.body.appendChild(addLista)
+
+            alert("Tecnologia " + tecnologia.value + " absorvida!")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04 - soma, subtração, divisão e multiplicação</title>
+    <link rel="icon" href="../img/javascript.png">
+</head>
+<body>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <div id="res"></div> <br>
+    <button id="soma">Soma</button>
+    <button id="subtracao">subtração</button>
+    <button id="divisao">divisão</button>
+    <button id="multiplicacao">multiplicação</button>
+
+    <script>
+        let tn1 = document.querySelector('#txtn1')
+        let tn2 = document.querySelector('#txtn2')
+
+        soma.addEventListener('click', somar)
+        subtracao.addEventListener('click', subtrair)
+        divisao.addEventListener('click', dividir)
+        multiplicacao.addEventListener('click', multiplicar)
+
+        function somar( event ) {
+            let res = window.document.getElementById('res')
+
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+
+            let soma = n1 + n2
+            res.innerHTML = soma      
+        }
+        function subtrair( event ) {
+            let res = window.document.getElementById('res')
+
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+
+            let sub = n1 - n2
+            res.innerHTML = sub
+        }
+        function dividir( event ) {
+            let res = window.document.getElementById('res')
+
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+
+            let divis = n1 / n2
+            res.innerHTML = divis
+        }
+        function multiplicar( event ) {
+            let res = window.document.getElementById('res')
+
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+
+            let mult = n1 * n2
+            res.innerHTML = mult
+        }
+
+    </script>
+</body>
+</html>

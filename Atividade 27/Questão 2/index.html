@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02 - Letras minúscula</title>
+    <link rel="icon" href="../img/javascript.png">
+</head>
+<body>
+    <input type="text" name="" id="campo">
+
+    <script>
+        const nameInput = document.querySelector('#campo')
+
+        nameInput.addEventListener('keyup', maiuscula)
+
+        function maiuscula( event ) {
+            nameInput.value = nameInput.value.toLowerCase();
+        }
+    </script>
+</body>
+</html>

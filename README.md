@@ -1,1 +1,1 @@
-# Todas as Atividades do SENAI
+# Atividade 27 - 7 Questões JavaScript
