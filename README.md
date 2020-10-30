@@ -1,1 +1,1 @@
-# Todas as Atividades do SENAI
+# Atividade DOM 2 - Mudando com de fundo da DIV usando "rgb" com inputs range

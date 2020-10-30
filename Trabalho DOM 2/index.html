@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade DOM 2</title>
+
+    <script>
+        var r;
+        var g;
+        var b;
+
+        function cor() {
+            r = document.getElementById("red").value;
+            g = document.getElementById("green").value;
+            b = document.getElementById("blue").value;
+            document.getElementById('corpo').style.backgroundColor = rgb();
+        }
+
+        function rgb() {
+            return 'rgb(' + r + ',' + g + ',' + b + ')';
+        }
+    </script>
+
+    <style>
+        #corpo {
+            position: relative;
+            border: 1px black solid;
+            width: 200px;
+            height: 200px;
+            left: 600px;
+        }
+        p, h1 {
+            text-align: center;
+            position: relative;
+            width: 1000px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>RGB - Mateus Gomes de Souza</h1>
+
+    <hr>
+
+    <p>  
+        <label for="Vermelho">(R) Vermelho:</label><input type="range" name="red" id="red" min="0" max="255" step="1" value ="0" oninput="cor()" onchange="tRed.value = value"><input type="text" name="tRed" id="tRed" value="0" readonly disabled> <br>
+    
+        <label for="Verde">(G) Verde:</label><input type="range" name="green" id="green" min="0" max="255" step="1" value="0" oninput="cor()" onchange="tGreen.value = value"><input type="text" name="tGreen" id="tGreen" value="0" readonly disabled> <br>
+    
+        <label for="Azul">(B) Azul:</label><input type="range" name="blue" id="blue" min="0" max="255" step="1" value ="0" oninput="cor()" onchange="tBlue.value = value"><input type="text" name="tBlue" id="tBlue" value="0" readonly disabled> <br>
+    </p>
+
+    <br>
+    <br>
+
+    <div id="corpo">
+  
+</body>
+</html>
