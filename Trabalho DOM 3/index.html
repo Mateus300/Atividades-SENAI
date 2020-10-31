@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página das Autuações</title>
+
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <header class="imagem">
+        <div class="opacidade"></div>
+        <div class="topo">
+            <div class="logo"></a></div>
+            <div class="menu">
+               <h1>Consulta de Autuações!</h1>
+            </div>
+        </div>
+        <div id="caixa">
+            <div id="cadastro">
+                    <fieldset style="background-color:#FD5151;">
+                        <legend style="background-color: #FD5151; border: 1px solid black; color: white;">Digite as informações abaixo:</legend>
+                        <table cellspacing="20" id="cad">
+                            <tr>
+                                <td>
+                                    <label for="velMax">Velocidade maxima da via:</label>
+                                </td>
+                                <td>
+                                    <input type="number" name="velMax" id="velMax" size="3" maxlength="5" placeholder="Km/h:"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="velCar">Genero:</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="velCar" name="velCar" size="3" maxlength="5" placeholder="Km/h:" onchange="confVel()"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="res">Resultado:</label>
+                                </td>
+                                <td>
+                                    <div id="res"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="val">Valor da multa:</label>
+                                </td>
+                                <td>
+                                    <div id="val"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nome">Nome do condutor:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="nome" id="nome" maxlength="30" size="20"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nCart">Nº carteira de motorista:</label>
+                                </td>
+                                <td>
+                                    <input type="number" name="nCart" id="nCart" maxlength="15" size="15"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <button type="button" onclick="window.print()">
+                                        Imprimir!
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="caixa">
+            <div class="rodape">
+                <h3>Nosso contato!</h3>
+                <p>Rua: Qualquer rua que eu quiser, nº 350, Belo Horizonte/MG</p>
+                <P>Telefone: (35) 3528 - 2015</P>
+                <p>Celular: (35) 98989 - 9898</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+    <footer>
+        <div id="criador">
+            <p id="autor"><b>Criado por Mateus Gomes de Souza 2020</b></p>
+        </div>
+    </footer>
+
+    <script>
+        function confVel() {
+            vMx = document.getElementById("velMax").value;
+            vC = document.getElementById("velCar").value;
+
+            vC = Number(vC);
+            vMx = Number(vMx);
+
+            if (vC <= vMx) {
+                document.getElementById('res').innerHTML = "Abaixo do limite de velocidade";
+                document.getElementById('val').innerHTML = "R$ 0";
+            } 
+            else if ( vC >= ++vMx && vC <= vMx+6) {
+                document.getElementById('res').innerHTML = "Advertência!";
+                document.getElementById('val').innerHTML = "R$ 0";
+            }
+            else if (vC >= vMx+7 && vC <= (vMx*1.20)) {
+                document.getElementById('res').innerHTML = "Infração Média!";
+                document.getElementById('val').innerHTML = "R$ 130,16";
+            }
+            else if (vC > (vMx*1.20) && vC <= (vMx*1.50)) {
+                document.getElementById('res').innerHTML = "Infração Grave!";
+                document.getElementById('val').innerHTML = "R$ 195,23";
+            }
+            else {
+                document.getElementById('res').innerHTML = "Infração Gravíssima 3x, Penalidade de suspensão do direito de dirigir.";
+                document.getElementById('val').innerHTML = "R$ 293,47 x 3 = R$ 880,41";
+            }
+        }
+    </script>
+</body>
+</html>
