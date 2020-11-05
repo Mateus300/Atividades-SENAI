@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Formulário - 02</title>
+
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <script src="../JS/efeitos.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Formulário com banco de dados</h1>
+    </div>
+
+    <form action="">
+        <fieldset id="form2">
+            <legend>Banco de dados - cadastro de informações</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="codigo">Código do cliente:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="codigo" id="nome" maxlength="20" size="20" onkeypress="cor()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="preço">Valor da compra (emR$):</label>
+                    </td>
+                    <td>
+                        <input type="number" id="preço" name="preço">
+                    </td>
+                </tr>
+            </table>
+            <label for="compra">Tipo de equipamento adiquirido:</label> <br>
+            <input type="radio" name="compra" id="impressora"/>
+            <label for="impressora">Impressora.</label> <br>
+            <input type="radio" name="compra" id="notebook"/>
+            <label for="notebook">Notebook.</label> <br>
+            <input type="radio" name="compra" id="smartphone"/>
+            <label for="smartphone">Smartphone.</label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Cadastrar compra" id="btn" />
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset id="form2">
+            <legend>Banco de dados - alteração de informações</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="codigo">Código do cliente para a pesquisa:</label>
+                    </td>
+                    <td>
+                        <input type="text" maxlength="20" size="20"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="preço">Retificação do valor da compra (emR$):</label>
+                    </td>
+                    <td>
+                        <input type="number" id="preço" name="preço">
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Alterar valor da compra" id="btn" />
+        </fieldset>
+    </form>
+</body>
+</html>

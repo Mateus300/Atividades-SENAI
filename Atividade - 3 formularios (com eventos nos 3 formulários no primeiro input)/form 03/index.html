@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Fornulário - 03</title>
+
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <script src="../JS/efeitos.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Formuçários - publicação de artigos</h1>
+    </div>
+
+    <br>
+
+    <form action="" id="form3">
+        <fieldset>
+            <legend>Artigo</legend>
+            <table id="tb1">
+                <tr>
+                    <td>
+                        <label for="titulo">Titulo:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nome" name="titulo" maxlength="20" size="10" onkeypress="cor()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dataPubli">Data de publicação:</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" id="dataPubli" name="dataPubli" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comentario">Palavras-chave do artigo:</label>
+                    </td>
+                    <td>
+                        <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <label for="upar">Enviar artigo (formato .pdf, máximo 50KB):</label>
+            <input type="file" name="" id="">
+        </fieldset>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar artigo" id="enviar3"/>
+    </form>
+</body>
+</html>
