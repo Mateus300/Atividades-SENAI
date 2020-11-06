@@ -1,1 +1,1 @@
-# Todas as Atividades do SENAI
+# Atividade de manipulação - adicionar e retirar li
