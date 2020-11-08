@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#geral {
+    width: 40%;
+    position: relative;
+    left: 30%;
+    border-radius: 10px;
+}
+
+div {
+    border: ridge 1px black;
+}
+
+p {
+    font-size: 20px;
+}
+
+#joseCor {
+    color: rgb(47, 3, 243);
+}
+
+#joaoCor {
+    color: green;
+}
+
+button {
+    position: relative;
+    left: 40%;
+    margin-bottom: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: rgb(180, 6, 6) ridge 2px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
