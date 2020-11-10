@@ -1,1 +1,1 @@
-# Todas as Atividades do SENAI
+# Todas atividades do SENAI
