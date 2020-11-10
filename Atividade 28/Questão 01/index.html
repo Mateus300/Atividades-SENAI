@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+</head>
+<body>
+    <h1>Analisador de Números</h1>
+
+    <div>
+        <label for="num">Número (entre 1 e 100):</label>
+        <input type="number" name="num" id="num"/>
+        <input type="button" value="Adicionar" id="adBot"/>
+
+        <br>
+        <br>
+
+        <textarea name="caixa" id="caixa" cols="30" rows="10" readonly></textarea>
+
+        <br>
+
+        <p id="res"></p>
+
+        <input type="button" value="Finalizar" id="final"/>
+    </div>
+
+
+    <script>
+        var n = document.querySelector('#num');
+
+        var caixa = document.getElementById('caixa');
+
+        var clique = document.querySelector('#adBot');
+        clique.addEventListener('click', listaNum);
+
+        var nums = [];
+
+        function listaNum ( event ) {
+            var erro = 0;
+            var numero = Number(n.value);
+
+            if(numero >= 1 && numero <=100){
+                for(var i = 0; i < nums.length; i++){
+                    if(numero == nums[i]){
+                        alert('Número já selecionado!');
+                        erro ++;
+                    }
+                }
+                if(erro == 0){
+                    nums.push(numero);
+                    caixa.innerText= numero
+                }
+            } else{
+                alert('Digite um número inteiro!');
+            }
+            n.value = ""
+        }
+
+        var final = document.getElementById('final');
+        final.addEventListener('click', finalizar);
+
+        var res = document.getElementById('res');
+
+        function finalizar(){
+            var quant = nums.length;
+            var soma = 0;
+            var maior = 0;
+            var menor = 1000;
+
+            for(var i = 0; i < nums.length; i++){
+                soma = soma + nums[i];
+            };
+
+            for(var i = 0; i < nums.length; i++){
+                if(nums[i] > maior){
+                    maior = nums[i];
+                }
+            };
+
+            for(var i = 0; i < nums.length; i++){
+                if(nums[i] < menor){
+                    menor = nums[i];
+                }
+            };
+
+            var media = soma/quant;
+
+            res.innerHTML = `
+            ${quant} números cadastrados <br>
+            ${menor} é o menor número <br>
+            ${maior} é o maior número <br>
+            Soma dos números: ${soma} <br>
+            A média dos números: ${media}
+            `
+        }
+    </script>
+
+</body>
+</html>

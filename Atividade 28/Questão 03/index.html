@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <div>
+        <label for="num">Número:</label>
+        <input type="number" name="num" id="num"/>
+        <input type="button" id="botao" value="Gerar Tabuada"/> <br><br>
+
+        <textarea name="res" id="res" cols="30" rows="10" readonly></textarea>
+    </div>
+
+    <script>
+        var numero = document.getElementById('num');
+        
+        var clique = document.getElementById('botao');
+        clique.addEventListener('click', calcular);
+
+        var res = document.getElementById('res');
+
+        function calcular() {
+            var op = 1;
+            var values = [];
+            var num = Number(numero.value);
+
+            if(num > 0){
+                for(var i = 0; i < 10; i++){
+                    values.push(`${num} x ${i} = ${num*i}`)
+                }
+                res.innerText = `${values.join('|')}`;
+            }else{
+                alert("Digite um número iteiro!");
+            }
+        }
+    </script>
+</body>
+</html>

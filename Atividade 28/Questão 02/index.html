@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+
+
+</head>
+<body>
+    <h1>Contador</h1>
+    <div>
+        <label for="inicio">Início:</label>
+        <input type="number" name="inicio" id="inicio"/> <br><br>
+
+        <label for="fim">Fim:</label>
+        <input type="number" name="fim" id="fim"/> <br><br>
+
+        <label for="passo">Passo:</label>
+        <input type="number" name="passo" id="passo"/> <br><br>
+
+        <input type="button" value="Contar" id="botao"/>
+
+        <br>
+        <br>
+
+        <p id="caixa"></p>
+    </div>
+
+    <script>
+        var inicio = document.getElementById('inicio');
+        var final = document.getElementById('fim');
+        var passo = document.getElementById('passo');
+
+        var clique = document.getElementById('botao');
+        clique.addEventListener('click', contar);
+
+        var caixa = document.getElementById('caixa');
+
+        var quant = [];
+
+        function contar(){
+            var ini = Number(inicio.value);
+            var fim = Number(final.value);
+            var pas = Number(passo.value);
+            var res = 0;
+
+            if(ini > fim){
+                for(var i = ini; i >= fim; i = i - pas ){
+                   quant.push(i);
+                }
+            }else{
+                alert("O número de 'inicio' deve ser maior que o de 'fim' para que funcione!");
+            }
+
+            caixa.innerHTML = `
+                Contando: <br>
+                ${quant.join(' \u{1F637} ')}
+                \u{1F637} `;
+        }
+    </script>
+</body>
+</html>
