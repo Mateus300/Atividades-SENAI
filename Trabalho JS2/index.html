@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <title>Oferta e Pesquisa de Empregos</title>
+    <link rel="stylesheet" href="./CSS/estilo.css" type="text/css">
+    <script type="text/javascript" language="JavaScript" src="./JS/empregoweb.js"></script>
+</head>
+
+<body>
+    <div id="logotipo">
+        <img src="img/emprego.png" alt="Logotipo Oferta e Pesquisa de Empregos" width="160" height="80" name="logotipo">
+    </div>
+    <div id="cabecalho">
+        Oferta e Pesquisa de Empregos
+    </div>
+    <div id="menu">
+        <br>
+        <ul>
+            <!-- <li><a href="index.html" alt>Início</a></li> -->
+            <li><a id="home" href="javascript:mostraDivs('home')" alt>Início</a></li>
+            <li><a id="register" href="javascript:mostraDivs('registrar')" title="Registo emprego">Registrar</a></li>
+            <li><a id="select" href="javascript:mostraDivs('consultar')" title="Consultar emprego">Procurar</a></li>
+        </ul>
+    </div>
+
+    <div id="centro">
+        <div id="index">
+            <div id="sub_centro">
+                <div id="titulo_centro">
+                    Apresentação
+                </div>
+                <div id="container_centro">
+                    Este site pretende ajudar as pessoas a cadastrar e a procurar ofertas de emprego
+                </div>
+            </div>
+            <div id="sub_centro">
+                <div id="titulo_centro">
+                    Maiores nºs de ofertas registadas
+                </div>
+                <div id="container_centro">
+                    <table id="maiores_ofertas" border="1">
+                        <tr>
+                            <th>Profissao</th>
+                            <th>Nome</th>
+                            <th>Data mais recente</th>
+                            <script language="javascript">
+                                loadMaioresOfertas()
+                            </script>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="registrar">
+            <div id="sub_centro">
+                <div id="titulo_centro">
+                    Registe os dados da oferta de emprego
+                </div>
+                <div id="container_centro">
+                    <form id="regista_emprego">
+                        <div id="label">Profissao: </div>
+                        <input type="TEXT" name="profissao" size="50"/>
+                        <br>
+                        <div id="label">Nome: </div>
+                        <input type="TEXT" name="nome" size="50"/>
+                        <br>
+                        <div id="label">Localidade: </div>
+                        <input type="TEXT" name="localidade" size="50"/>
+                        <br>
+                        <div id="label">Curriculo: </div>
+                        <input type="file" name="curriculo"/>
+                        <br>
+                        <div id="label">Data: </div>
+                        <input type="date" name="data"/>
+                        <br>
+                        <hr>
+                        <div id="buttons">
+                            <input type="button" name="_submit" value="Registar os dados" onClick="registaOferta()">
+                            <input type="reset" name="_reset" value="Limpar dados" onclick="limparDadosRegistro()">
+                        </div>
+                        <label id="confirmacao"></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script LANGUAGE="JavaScript">
+            document.getElementById("registrar").style.display = 'none';
+        </script>
+
+        <div id="consultar">
+            <div id="sub_centro">
+                <div id="titulo_centro">
+                    Consulte os empregos existentes por Profissao ou
+                    Localidade
+                </div>
+
+                <div id="container_centro">
+                    <form id="regista_oferta">
+                        <div id="label">Profissao: </div>
+                        <input type="TEXT" name="profissao" size="30">
+                        <br>
+                        <div id="label">Localidade: </div>
+                        <input type="TEXT" name="localidade" size="30">
+                        <br>
+                        <hr>
+                        <div id="buttons">
+                            <input type="button" name="submit" value="Consultar" onClick="consultarEmpregos()">
+                            <input type="reset" name="_reset" value="Limpar dados" onclick="limparDadosConsulta()">
+                        </div>
+                        <br>
+                        <hr>
+                        <div id="aux">
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <script LANGUAGE="JavaScript">
+                        document.getElementById("consultar").style.display = 'none';
+                    </script>
+                </div>
+</body>
+
+</html>

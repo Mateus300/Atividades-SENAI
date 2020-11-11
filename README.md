@@ -1,1 +1,1 @@
-# Todas atividades do SENAI
+# Trabalho JS2
